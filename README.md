@@ -9,8 +9,8 @@ sys.sh is a script that:
 - creates a directory called 'research' in the user's home folder
 - deletes previous system information files, if they exist, within that directory
 - describes itself
-- printes the date the script was run
-- printes the machine type
+- prints the date the script was run
+- prints the machine type
 - displays the IP address
 - displays the host name
 - displays any files that have full permissions for all users in the '/' folder
