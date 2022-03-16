@@ -49,6 +49,7 @@ The Diagrams folder contains two diagrams:
 - the SSH, TCP, and HTTP traffic on the network
 
 The Ansible folder contains three .yml files
+
 'filebeat-config.yml' is an ansible configuration file which has been edited to have the proper Elastisearch and kibana host ip for the network
 
 'filebeat-playbook.yml' is the filebeat playbook which:
