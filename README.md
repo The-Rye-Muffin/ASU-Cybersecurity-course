@@ -169,7 +169,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the configuration file to the remote containers.
-- Update the hosts file to include the IP
+- Copy the updated configuration file (metricbeat.yml) to the controller container.
+- Update the hosts file to include the IP of the remote servers
 - Run the playbook, and navigate to {ELK_VMs_public_IP:5601/app/kibana} to check that the installation worked as expected.
 
