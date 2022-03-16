@@ -52,7 +52,7 @@ The Ansible folder contains three .yml files
 
 'filebeat-config.yml' is an ansible configuration file which has been edited to have the proper Elastisearch and kibana host ip for the network
 
-'filebeat-playbook.yml' is the filebeat playbook which:
+'filebeat-playbook.yml' is the ansible playbook which:
 - downloads and installs the filebeat .deb file
 - copies the configuration file from the controller to the servers
 - enables system on filebeat module
@@ -60,7 +60,7 @@ The Ansible folder contains three .yml files
 - starts the filebeat service
 - sets the filebeat service to start on startup
 
-'metricbeat-playbook.yml' is the metricbeat playbook which:
+'metricbeat-playbook.yml' is the ansible playbook which:
 - downloads and installs the metricbeat .deb file
 - copies the metricbeat configuration file to the servers from the controller
 - enables the metricbeat docker module
