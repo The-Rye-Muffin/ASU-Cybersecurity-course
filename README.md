@@ -1,7 +1,7 @@
 # ASU-Cybersecurity-course
-An overview of topics covered in the ASU cybersecurity course
+This GitHub repository provides a broad overview of topics covered in the ASU cybersecurity course
 
-The Linux folder contains three scrips:
+The Linux folder contains three scripts:
 -sys.sh
 -sys_info.sh
 -for_loops.sh
@@ -11,21 +11,21 @@ sys.sh is a script that:
 - describes itself
 - printes the date the script was run
 - printes the machine type
-- display's the IP address
-- display's the host name
+- displays the IP address
+- displays the host name
 - displays any files that have full permissions for all users in the '/' folder
-- printes the top memory using apps
+- prints the top memory using apps
 - uses a for-loop to check the permissions on the 'shadow' and 'passwd' files
 - prints the months of the year
-- printes the days of the week
+- prints the days of the week
 
 sys_info.sh is a script that:
 - runs a quick system audit
 - displays the date
-- display the machine type
-- display the uname info
-- display the IP info
-- display the host name
+- displays the machine type
+- displays the uname info
+- displays the IP info
+- displays the host name
 
 for_loops.sh is a script that:
 - goes through a list of states and determines if any of them are home to the region known as 'So-Cal'
