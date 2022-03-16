@@ -1,6 +1,72 @@
 # ASU-Cybersecurity-course
 An overview of topics covered in the ASU cybersecurity course
 
+The Linux folder contains three scrips:
+-sys.sh
+-sys_info.sh
+-for_loops.sh
+sys.sh is a script that: 
+- creates a directory called 'research' in the user's home folder
+- deletes previous system information files, if they exist, within that directory
+- describes itself
+- printes the date the script was run
+- printes the machine type
+- display's the IP address
+- display's the host name
+- displays any files that have full permissions for all users in the '/' folder
+- printes the top memory using apps
+- uses a for-loop to check the permissions on the 'shadow' and 'passwd' files
+- prints the months of the year
+- printes the days of the week
+
+sys_info.sh is a script that:
+- runs a quick system audit
+- displays the date
+- display the machine type
+- display the uname info
+- display the IP info
+- display the host name
+
+for_loops.sh is a script that:
+- goes through a list of states and determines if any of them are home to the region known as 'So-Cal'
+- checks if there are any scripts in any user's home folder
+
+The Diagrams folder contains two diagrams:
+
+'Azure-cloud-network-diagram' which shows the Azure network that was created and includes details such as:
+- IP addresses of devices on the network
+- the exposed ports on each machine
+- what containers each machine is running
+- the various protocols allowed between each machine
+
+'Network-Diagram-Ch12-activity' which is a similiar diagram created for an activity. It shows details including:
+- the network resource group
+- the virtual networks
+- the ip ranges of both virtual networks
+- the devices within the network
+- the docker containers mounted on each machine
+- the network security groups
+- the SSH, TCP, and HTTP traffic on the network
+
+The Ansible folder contains three .yml files
+'filebeat-config.yml' is an ansible configuration file which has been edited to have the proper Elastisearch and kibana host ip for the network
+
+'filebeat-playbook.yml' is the filebeat playbook which:
+- downloads and installs the filebeat .deb file
+- copies the configuration file from the controller to the servers
+- enables system on filebeat module
+- sets up filebeat
+- starts the filebeat service
+- sets the filebeat service to start on startup
+
+'metricbeat-playbook.yml' is the metricbeat playbook which:
+- downloads and installs the metricbeat .deb file
+- copies the metricbeat configuration file to the servers from the controller
+- enables the metricbeat docker module
+- starts the metricbeat service
+- sets the metricbeat service to start on startup
+
+Both setup playbooks use a more streamlined installation process combining both downloading and installing, however the manual process is left commented if needed.
 
 
 
